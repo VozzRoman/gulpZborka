@@ -1,0 +1,27 @@
+.home {
+}
+.home-content__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.home-content__list {
+  display: flex;
+  margin-left: -15px;
+  margin-bottom: -15px;
+  flex-wrap: wrap;
+}
+
+.home-content__item {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  height: 200px;
+  flex: 0 1 100%;
+  @media screen and (min-width: 767px) {
+    flex-basis: calc(100% / 3 - 15px);
+  }
+  background-color: wheat;
+  @media screen and (min-width: 1181px) {
+    flex-basis: calc(100% / 4 - 15px);
+  }
+}

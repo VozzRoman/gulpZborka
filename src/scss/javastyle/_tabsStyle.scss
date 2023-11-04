@@ -1,0 +1,36 @@
+//--------tabsStyle------------------------------------------- 
+	
+.tabs {
+	max-width: 700px;
+	background: #ccc;
+	margin: 50px auto;
+}
+.tabs__header {
+	display: flex;
+	border-bottom: 1px solid green;
+	font-size: 16px;
+}
+
+.tab-nav__item {
+	padding: 10px 5px;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s all;
+	&:hover{
+		background: #ddd;
+		border-bottom: 1px solid green;
+	}
+}
+.tab-nav__item {
+	&.active{
+	background: #ddd;
+	border-bottom: 1px solid green;
+	}
+}
+.tab__content{
+	display: none;
+	&.active{
+		display: block;
+	}
+}

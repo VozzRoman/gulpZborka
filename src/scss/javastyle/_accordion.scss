@@ -1,0 +1,46 @@
+.accordion {
+	max-width: 300px;
+	margin: 0 auto;
+	
+}
+
+.accordion__box {
+	border: 3px solid rgb(102, 102, 255);
+	margin: 0 0 10px 0;
+
+	
+}
+.accordion__title {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 600;
+	background-color:rgb(102, 102, 255);
+	&::after{
+		content:'+';
+		transition: 0.5s;
+	}
+	&.active::after{
+		content:'+';
+		transform: rotate(240deg);
+	}
+	&.active + .accordion__body{
+		height: 130px;
+	
+	transition: 0.5s;
+	
+	}
+}
+.accordion__body {
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.accordion__content {
+	padding: 10px 10px;
+	margin: 0 0 10px 0;
+}
